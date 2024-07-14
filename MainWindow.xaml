@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window
+    x:Class="ImagesMissingSample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:ImagesMissingSample"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <NavigationView
+        x:Name="Navigation"
+        Width="1000"
+        Height="500"
+        SelectionChanged="NavigationView_SelectionChanged">
+        <NavigationView.MenuItems>
+            <NavigationViewItem Content="Page With List" />
+            <NavigationViewItem Content="Page With Nothing" />
+        </NavigationView.MenuItems>
+
+        <Frame x:Name="Presenter" />
+    </NavigationView>
+</Window>
